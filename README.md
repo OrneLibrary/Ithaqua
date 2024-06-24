@@ -16,6 +16,14 @@ To use Ithaqua, you must have fping installed on your system. This can typically
 sudo apt-get install fping  # Debian/Ubuntu
 sudo yum install fping      # CentOS/RHEL
 ```
+
+## Installation 
+Before using the script, you need to clone it from the GitHub repository:
+
+```bash
+git clone https://github.com/OrneLibrary/Ithaqua.git
+cd Ithaqua
+```
 ## Usage
 To start scanning IP addresses, provide a file containing one IP address per line as an argument to the script:
 
