@@ -60,7 +60,7 @@ output_file="alivehosts.txt"
 # Function to check IPs
 check_ip() {
     local ip=$1
-    if ping -c 1 -W 1 "$ip" &>/dev/null; then
+    if fping -a -r 0 "$ip" &>/dev/null; then
         echo "$ip is alive, added to $output_file"
         echo "$ip" >> "$output_file"
     fi
